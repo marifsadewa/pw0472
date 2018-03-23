@@ -1,0 +1,144 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-size: 13px;
+}
+
+/*Content, BOX, Hoverbox*/
+.intro{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	background: url(../img/img2.jpg) no-repeat 50% 50%;
+	display: table;
+	top: 0;
+	background-size: cover;
+}
+.intro .inner{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%
+	max-width: none;
+}
+.content{
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+.content h2{
+	font-family: 'Raleway', sans-serif;
+	color: #F9F3F4;
+	text-shadow: 0px 0px 300px #000;
+	font-size: 500%;
+}
+.btn{
+	border-radius: 9px;
+	font-family: 'Oswald', sans-serif;
+	color: #000;
+	font-size: 135%;
+	padding: 10px 20px;
+	border: solid #000 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.btn:hover{
+	color: #fff;
+	border: solid #fff 3px;
+}
+.content2{
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: justify-all;
+}
+.btn2{
+	border-radius: 90px;
+	font-family: 'Oswald', sans-serif;
+	color: #000;
+	font-size: 135%;
+	padding: 5px 20px;
+	border: solid #000 3px;
+	text-transform: uppercase;
+	text-decoration: none;
+
+}
+.btn2:hover{
+	color: #fff;
+	border: solid #fff 3px;
+}
+/*Content, BOX, Hoverbox*/
+
+/*FONT STYLE*/
+pp{
+	font-size: 80%;
+	line-height: 210%;
+	text-align: justify;
+	margin: 3%;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	word-spacing: 10px;
+}
+@media screen and (max-width: 768px){
+	.content h2{
+		font-size: 250%;
+	}
+	.btn{
+		font-size: 110%;
+		padding: 7px 15px;
+	}
+	pp{
+		font-size: 250%;
+		line-height: 160%;
+	}
+}
+
+h1{
+    color: black;
+    text-align: center;
+}
+p{
+    font-family: verdana;
+    font-size: 14px;
+    text-align: justify-all;
+    padding: 5px;
+}
+/*FONT STYLE*/
+
+/*TABEL WRAP*/
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 0.5em; 
+	align-items: stretch;
+}
+.wrapper > div{
+	background: #eee;
+	padding: 1em;
+}
+.wrapper > div:nth-child(odd){
+	background: #ddd;
+}
+.kotakimg{
+	grid-column: 1/4;
+	grid-row: 1; 
+}
+.kotakmenu{
+	grid-column: 1/4;
+	grid-row: 2; 
+}
+.kotakbody{
+	grid-column: 1/3;
+	grid-row: 3; 
+}
+.kotak3{
+	grid-column: 3/3;
+	grid-row: 3; 
+}
+.kotakfooter{
+	grid-column: 1/4;
+	grid-row: 4; 
+}
+/*TABEL WRAP*/
+
