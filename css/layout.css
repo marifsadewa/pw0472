@@ -1,0 +1,105 @@
+body{
+	font:	15px/1.5 Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+}
+
+
+/*ALL*/
+.header{
+	margin: 0 auto;
+	width: 100%; 
+	height: 120px;
+	background: #35424a;
+}
+
+.menu{
+	margin: 0 auto;
+	width: 100%; 
+	height: 50px;
+	background: #fbfbfb;
+	text-align: center;
+}
+
+.content{
+	width: 80%;
+	margin:auto;
+	overflow: hidden;
+}
+
+
+/*HEADER*/
+.header h1{
+	font-size: 30px;
+	padding: 15px;
+	color: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.header h1 small{
+	font-size: 15px;
+	font-style: italic;
+	color: #ffffff;
+}
+
+.menu nav{
+	float: left;
+}
+
+.menu li{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+.menu ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*BOX Menu*/
+#box{
+	margin-top: 20px;
+}
+
+#box .c1{
+	float: left;
+	width: 30%;
+	padding:10px;
+	background: #ff4000;
+}
+
+#box .c2{
+	float: left;
+	width: 30%;
+	padding:10px;
+	background: #ff8000;
+}
+
+#box .c3{
+	float: left;
+	width: 30%;
+	padding:10px;
+	background: #ffbf00;
+}
+
+#box .img{
+	width: 90px;
+}
+
+
+/*FOOTER*/
+.footer{
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #35424a;
+
+}
+
+p{
+	font-size: 15px;
+	color: #ffffff;
+}
