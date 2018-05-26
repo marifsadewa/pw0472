@@ -22,14 +22,28 @@
 		    templateUrl : "about.htm"
 		  })
 		  .when("/product", {
-		    templateUrl : "product.htm"
+		    templateUrl : "product.htm",
+		    controller:"weatherCtrl"
 		  })
 		  .when("/contact", {
 		    templateUrl : "contact.htm"
 		  });
 		});
-	</script>
 
+	app.controller('weatherCtrl', function($scope, $http) {
+		var url = 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=4de4dd041e499ca8a4f6692097befdae';
+		$http.get(url).then(function(response){
+		$scope.info = response.data;
+		var temp = 
+		$scope.cel = temp-273;
+		});
+
+	    $scope.title = "Weather of London";
+	});
+	app.controller('aboutCtrl', function($scope) {
+	    $scope.num = 10*5.2;
+	});
+	</script>
 
 </head>
 
@@ -45,7 +59,7 @@
 			<div class="col-12">
 				<a href="#!home">Home</a>::
 				<a href="#!about">About</a>::
-				<a href="#!product">Product</a>::
+				<a href="#!product">Weather</a>::
 				<a href="#!contact">Contact</a>
 			</div>
 		</div>
