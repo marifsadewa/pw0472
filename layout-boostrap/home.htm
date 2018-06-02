@@ -15,3 +15,13 @@
 		<button type="button" class="btn btn-primary">Click Me!</button> 
 	</div>
 </div>
+
+<div ng-app="myApp" ng-controller="customersCtrl"> 
+<table>
+  <tr ng-repeat="x in names">
+    <td>{{ x.Name }}</td>
+    <td>{{ x.Country }}</td>
+  </tr>
+</table>
+
+</div>

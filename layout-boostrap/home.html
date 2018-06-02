@@ -17,9 +17,11 @@
 		  })
 		  .when("/home", {
 		    templateUrl : "home.htm"
+
 		  })
 		  .when("/about", {
 		    templateUrl : "about.htm"
+
 		  })
 		  .when("/product", {
 		    templateUrl : "product.htm",
@@ -40,8 +42,15 @@
 
 	    $scope.title = "Weather of London";
 	});
+
+	
 	app.controller('aboutCtrl', function($scope) {
 	    $scope.num = 10*5.2;
+	});
+
+	app.controller('customersCtrl', function($scope, $http) {
+    $http.get("https://api.myjson.com/bins/1ecdlq").then(function (response){
+    $scope.names = response.data.records;});
 	});
 	</script>
 
